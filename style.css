@@ -8,10 +8,14 @@
     --card-width-sm:120px;
     --card-height-sm:168px;
 
+    --card-width-smm:60px;
+    --card-height-smm:80px;
+
     --num-cards:4;
 
     --card-horizontal-space-lg: 100px;
     --card-horizontal-space-sm: 50px;
+     --card-horizontal-space-smm: 20px;
 
     --badge-bg-color: darkgrey;
     --primary-color: black;
@@ -287,4 +291,28 @@ header {
     .header-img{
         height:55px;
     }
+}
+
+@media screen and (max-width:500px){
+.card{
+        width: var(--card-width-smm);
+        height: var(--card-height-smm);
+    }
+    .card-container{
+        width: calc(var(--card-width-smm) * (var(--num-cards)/2) + var(--card-horizontal-space-smm));
+.game-play-button-container{
+        width: 120px;
+        height: 40px;
+    }
+    #playGame{
+        padding: 2px 4px;
+        font-size:6px;
+        min-height:20px;
+    }
+    .header-img{
+        height:20px;
+    }
+}
+    }
+    
 }
